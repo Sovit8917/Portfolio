@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sovit • Portfolio</title>
+  <meta name="description" content="Sovit Sarbeswar Lenka – Full‑stack developer portfolio with projects, skills, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="progress-wrap" aria-hidden="true"><div class="progress" id="progress"></div></div>
+
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <span>Sovit</span>
+      </div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="btn small" aria-pressed="false" aria-label="Toggle theme">Theme</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero container">
+      <div class="hero-inner">
+        <span class="tag reveal">Full‑stack • UI/UX • Web</span>
+        <h1 class="reveal">Building fast, elegant web experiences.</h1>
+        <p class="lead reveal">Hi, I'm <strong>Sovit Sarbeswar Lenka</strong> — a developer focused on performance, accessibility, and delightful micro‑interactions.</p>
+        <div class="cta reveal">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">About</div>
+          <h2>Crafting usable, beautiful interfaces</h2>
+        </div>
+      </div>
+      <div class="grid cols-2">
+        <div class="card reveal">
+          <p>I blend solid engineering with thoughtful design. My priorities are semantic HTML, accessible components, and smooth, GPU‑friendly animations. I enjoy React, Node.js, and modern CSS.</p>
+        </div>
+        <div class="card reveal">
+          <p>Beyond code, I care about the details: motion that serves meaning, focus states you can see, and layouts that breathe on every screen size.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Skills</div>
+          <h2>What I work with</h2>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="skills">
+          <span class="chip">HTML5</span>
+          <span class="chip">CSS3</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">React</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Express</span>
+          <span class="chip">MongoDB</span>
+          <span class="chip">Git & GitHub</span>
+          <span class="chip">REST APIs</span>
+          <span class="chip">UI/UX</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Projects</div>
+          <h2>Selected work</h2>
+        </div>
+      </div>
+      <div class="grid cols-3">
+        <article class="card project reveal">
+          <div class="media">BOOKWITHSOVIT</div>
+          <div class="body">
+            <h3>BookWithSovit</h3>
+            <p class="lead">Movie ticket booking with real‑time seat selection and QR ticket.</p>
+            <div class="meta">
+              <span class="badge">React</span>
+              <span class="badge">Node</span>
+              <span class="badge">MongoDB</span>
+            </div>
+            <div class="actions">
+              <a class="btn small" href="#" aria-label="Live demo BookWithSovit">Live</a>
+              <a class="btn small secondary" href="#" aria-label="Source code BookWithSovit">Code</a>
+            </div>
+          </div>
+        </article>
+        <article class="card project reveal">
+          <div class="media">SOVIWATCH</div>
+          <div class="body">
+            <h3>SoviWatch</h3>
+            <p class="lead">Premium watch store with product modals, cart, and checkout flow.</p>
+            <div class="meta">
+              <span class="badge">Next.js</span>
+              <span class="badge">Stripe</span>
+              <span class="badge">Tailwind</span>
+            </div>
+            <div class="actions">
+              <a class="btn small" href="#">Live</a>
+              <a class="btn small secondary" href="#">Code</a>
+            </div>
+          </div>
+        </article>
+        <article class="card project reveal">
+          <div class="media">SOVIKART</div>
+          <div class="body">
+            <h3>SoviKart</h3>
+            <p class="lead">Shopping app with filters, sorting, and PDF invoices.</p>
+            <div class="meta">
+              <span class="badge">React</span>
+              <span class="badge">Redux</span>
+              <span class="badge">Express</span>
+            </div>
+            <div class="actions">
+              <a class="btn small" href="#">Live</a>
+              <a class="btn small secondary" href="#">Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Contact</div>
+          <h2>Let’s build something great</h2>
+        </div>
+      </div>
+      <form class="reveal" aria-label="Contact form" onsubmit="event.preventDefault(); alert('Thanks! I\'ll get back to you.'); this.reset();">
+        <div>
+          <label for="name">Name</label>
+          <input id="name" name="name" autocomplete="name" required />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" autocomplete="email" required />
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell me about your project…"></textarea>
+        </div>
+        <div style="display:flex; gap:10px;">
+          <button class="btn" type="submit">Send Message</button>
+          <a class="btn secondary" href="#home">Back to top</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© 2025 • Sovit Sarbeswar Lenka</div>
+      <div class="social" aria-label="Social links">
+        <a href="#" aria-label="GitHub" title="GitHub">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.486 2 12.021c0 4.425 2.865 8.18 6.839 9.504.5.091.682-.217.682-.483 0-.237-.009-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.454-1.155-1.109-1.462-1.109-1.462-.907-.62.069-.608.069-.608 1.003.071 1.531 1.032 1.531 1.032.892 1.531 2.341 1.089 2.91.833.091-.648.35-1.089.636-1.34-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.03-2.689-.103-.254-.447-1.272.098-2.65 0 0 .84-.269 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.56 9.56 0 0 1 2.504.337c1.909-1.295 2.748-1.026 2.748-1.026.547 1.378.203 2.396.1 2.65.64.701 1.028 1.596 1.028 2.689 0 3.848-2.339 4.695-4.566 4.944.359.31.678.92.678 1.856 0 1.338-.012 2.419-.012 2.749 0 .268.18.58.688.481A10.02 10.02 0 0 0 22 12.021C22 6.486 17.523 2 12 2Z"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn" title="LinkedIn">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452H17.2v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.447-2.136 2.943v5.663H9.063V9h3.111v1.561h.044c.434-.821 1.494-1.688 3.073-1.688 3.29 0 3.897 2.165 3.897 4.982v6.597zM5.337 7.433a1.81 1.81 0 1 1 0-3.62 1.81 1.81 0 0 1 0 3.62zM6.989 20.452H3.68V9h3.309v11.452z"/></svg>
+        </a>
+        <a href="#" aria-label="Email" title="Email">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 2v.01L12 13 4 6.01V6h16ZM4 18V8.236l7.386 6.37a1 1 0 0 0 1.228 0L20 8.236V18H4Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
